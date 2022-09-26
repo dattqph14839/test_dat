@@ -43,4 +43,8 @@ class NoteController extends ChangeNotifier {
   NoteModel? findByTitle(String title){
     return listOfNotes.firstWhere((element) => element.title == title);
   }
+  // void search(String keyword) async {
+  //   List<Map<String, dynamic>> res = await databaseHelper.search(keyword);
+  //   searchResults.assignAll((res.map((task) => Task.fromJson(task))).toList());
+  // }
 }
