@@ -6,7 +6,7 @@ class NoteController extends ChangeNotifier {
     NoteModel(
         title: 'first',
         content:
-            'contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent',
+            'abc',
         time: DateTime.now())
   ];
 
@@ -39,5 +39,8 @@ class NoteController extends ChangeNotifier {
   void deleteNote(int index) {
     listOfNotes.removeAt(index);
     notifyListeners();
+  }
+  NoteModel? findByTitle(String title){
+    return listOfNotes.firstWhere((element) => element.title == title);
   }
 }

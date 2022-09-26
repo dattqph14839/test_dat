@@ -79,20 +79,20 @@ class _MainPageState extends State<MainPage> {
                                         shape: BoxShape.circle,
                                         color: Colors.white,
                                         border: Border.all(
-                                            color: Colors.black, width: 1)),
-                                    // child: Padding(
-                                    //   padding: const EdgeInsets.all(5.0),
-                                    //   child: _value
-                                    //       ? const Icon(
-                                    //           Icons.check,
-                                    //           size: 20.0,
-                                    //           color: Colors.green,
-                                    //         )
-                                    //       : const SizedBox(
-                                    //           width: 20,
-                                    //           height: 20,
-                                    //         ),
-                                    // ),
+                                            color: Colors.red, width: 1)),
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(5.0),
+                                      child: _value
+                                          ? const Icon(
+                                              Icons.check,
+                                              size: 20.0,
+                                              color: Colors.green,
+                                            )
+                                          : const SizedBox(
+                                              width: 20,
+                                              height: 20,
+                                            ),
+                                    ),
                                   ),
                                 )),
                                 const SizedBox(
